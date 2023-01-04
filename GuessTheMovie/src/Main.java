@@ -9,7 +9,6 @@ public class Main {
         //use method from Game.java to get random movie title
         Game random = new Game();
         String randomTitle = random.getRandomTitle(random.file).toLowerCase();
-        System.out.println("Random line : " + randomTitle);
         //hide the full title name by "_"
         String coveredTitle = randomTitle.replaceAll("[a-z]", "_");
         System.out.println("You are guessing: " + coveredTitle);
@@ -56,7 +55,7 @@ public class Main {
                 break;
             }
             //if all letters guessed then win
-            if (!hiddenTitle.contains("_") && !(hiddenTitle.equals(" "))) {
+            if (!hiddenTitle.contains("_") && !(hiddenTitle.equals(""))) {
                 System.out.println("Congratulations! You guessed the movie title corectly" );
                 break;
             }

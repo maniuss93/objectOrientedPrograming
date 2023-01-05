@@ -50,7 +50,7 @@ public class Main {
             }
             //if guess 10 wrong letters then game over
             if(startingPoints==0){
-                System.out.println("You have guessed (10) wrong letters :" + wrongLetters);
+                System.out.println("You have guessed (10) wrong letters: " + wrongLetters);
                 System.out.println("You lost. The correct movie title is '" + randomTitle + "' .");
                 break;
             }
